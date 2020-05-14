@@ -130,6 +130,12 @@ const TutorialsList = () => {
               </label>{" "}
               {currentTutorial.published ? "Published" : "Pending"}
             </div>
+            <div>
+              <label>
+                <strong>Title + ID</strong>
+              </label>{" "}
+             {currentTutorial.titleId} 
+            </div>
 
             <Link
               to={"/tutorials/" + currentTutorial.id}
